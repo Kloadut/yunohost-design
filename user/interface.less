@@ -1,11 +1,11 @@
 @import "../lib/css/mixins-flex.less";
 
 .transition() {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* ==========================================================================
@@ -22,12 +22,12 @@
 
 .overlay {
   background: rgb(104,104,104);
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%, rgba(68,68,68,1) 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(104,104,104,1)), color-stop(100%,rgba(68,68,68,1)));
-  background: -webkit-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
-  background: -o-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
-  background: -ms-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
-  background: radial-gradient(ellipse at center,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  //background: -moz-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%, rgba(68,68,68,1) 100%);
+  //background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(104,104,104,1)), color-stop(100%,rgba(68,68,68,1)));
+  //background: -webkit-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  //background: -o-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  //background: -ms-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  //background: radial-gradient(ellipse at center,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#444444',GradientType=1 );
   position: absolute;
   width: 100%;
@@ -255,9 +255,9 @@ footer {
   /*text-align: center;*/
   position: relative;
   z-index: 10;
-  width: 78%;
+  width: 95%;
   margin: auto;
-  padding-top: 10em;
+  padding-top: 4em;
 }
 
 .apps h2 {
@@ -276,6 +276,7 @@ footer {
     margin-top: -0.5em;
     font-size: 1.5em;
   }
+  display: none;
 }
 
 .apps ul {
@@ -287,16 +288,17 @@ footer {
   text-align: left;
   margin-bottom: 0;
   letter-spacing: normal;
-  
+
   &:first-child {
     .transition;
-    margin-left: 10.8em!important;
+     //margin-left: 10.8em!important;
   }
 }
 
 .interface .apps .box {
-  margin: 0;
-  box-shadow:none;
+  margin: 1em;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.4), inset -2px -2px 3px 0px rgba(0,0,0,0.7);
+  //box-shadow:none;
   background: transparent;
 }
 
@@ -341,6 +343,7 @@ footer {
     .transition;
   }
   &:after {
+    box-shadow: 5px 0px 10px rgba(0,0,0,0.5);
     width: 0;
     height: 100%;
     top: 5px;
@@ -352,6 +355,7 @@ footer {
             transform: skew(0, 45deg);
   }
   &:before {
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
     width: 100%;
     height: 0;
     top: 2.7em;
